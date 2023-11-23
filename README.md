@@ -17,8 +17,8 @@ How to Run :
 
 	Download MongoDB Community Server -> run mongod
  	git clone https://github.com/anhtan2223/Eco_V1
-  	Open Terminal 1 in this  Repo: ->	 cd Backend/ && npm start
-  	Open Terminal 2 in this  Repo: ->	 cd Frontend/ && npm run dev
+  	Open Terminal 1 ->	 cd Backend/ && npm start
+  	Open Terminal 2 ->	 cd Frontend/ && npm run dev
    	
 Account For test :
 
