@@ -74,8 +74,8 @@
         const type = ref(0)
         const input = ref("")
         const router = useRouter()
-        var uid = localStorage.info ? JSON.parse(localStorage.info)._id : null 
-        const isLogin = localStorage.isLogin
+        var uid = sessionStorage.info ? JSON.parse(sessionStorage.info)._id : null 
+        const isLogin = sessionStorage.isLogin
         async function getProduct()
         {
                 productList.value = await AxiosAPI.getAllProduct()

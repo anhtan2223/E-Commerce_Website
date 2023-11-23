@@ -58,7 +58,7 @@
 
     const result = ref("Init")
 
-    if(localStorage.isLogin)
+    if(sessionStorage.isLogin)
       router.push('/info')
 
     async function Login()
@@ -83,8 +83,8 @@
             3 : "admin"
         }
 
-        localStorage.info = JSON.stringify(result.value.infomation)
-        localStorage.isLogin = roleTable[result.value.infomation.role]
+        sessionStorage.info = JSON.stringify(result.value.infomation)
+        sessionStorage.isLogin = roleTable[result.value.infomation.role]
         
         router.push(`/info`)
     }

@@ -5,7 +5,7 @@
 <script setup lang='ts'>
     import {ref} from 'vue'
     import ChangePass from '../../components/ChangePassword.vue'
-    const info = ref(JSON.parse(localStorage.info))
+    const info = ref(JSON.parse(sessionStorage.info))
 </script>
     
 <style>

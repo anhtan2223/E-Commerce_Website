@@ -71,7 +71,7 @@ import AxiosAPI from '../services/api.service'
 const props = defineProps(['id'])
 const listBill = ref([])
 const indexStatus = ["Đã Huỷ" , "Chờ Xác Nhận" , "Đang Gói Hàng" , "Đang Giao Hàng" , "Đã Thanh Toán"]
-const SID = JSON.parse(localStorage.info)._id
+const SID = JSON.parse(sessionStorage.info)._id
 
 async function getListBill() 
 {

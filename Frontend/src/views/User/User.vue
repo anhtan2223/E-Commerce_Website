@@ -86,21 +86,21 @@
 <script setup lang='ts'>
     import {ref} from 'vue'
     import AxiosAPI from '../../services/api.service'
-    const root = JSON.parse(localStorage.info)
+    const root = JSON.parse(sessionStorage.info)
     const info = ref({...root})
     delete info.value._id
-    const isLogin = localStorage.isLogin
+    const isLogin = sessionStorage.isLogin
     const isSetting = ref(false)
     async function UpdateInfo() 
     {
         isSetting.value = !isSetting.value 
         await AxiosAPI.UpdateAccount(root._id , info.value)
         alert("Cập Nhật Thông Tin Tài Khoản Thành Công")
-        localStorage.info = JSON.stringify({"_id" : root._id , ...info.value})
+        sessionStorage.info = JSON.stringify({"_id" : root._id , ...info.value})
     }
     function DangXuat()
     {
-        localStorage.clear()
+        sessionStorage.clear()
     }
 </script>
     

@@ -61,14 +61,14 @@ import { useRouter } from "vue-router"
 import { ref , computed} from "vue"
 import AxiosAPI from '../services/api.service'
 const router = useRouter()
-if(localStorage.isLogin !== 'user')
+if(sessionStorage.isLogin !== 'user')
 {
         alert("Vui Đăng Nhập Tài Khoản Khách Hàng")
         router.push('/login')
 }
 const cart = ref()
 const quantity = ref([])
-const UID = JSON.parse(localStorage.info)._id
+const UID = sessionStorage.info ? JSON.parse(sessionStorage.info)._id
 async function GetCart() 
 {
         cart.value = await AxiosAPI.getCart(UID)        
