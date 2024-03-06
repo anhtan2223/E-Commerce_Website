@@ -1,4 +1,4 @@
-# Ecommerce Version 1
+# Ecommerce Website
 Frontend + Backend
 
 Author : Le Sy Anh Tan
