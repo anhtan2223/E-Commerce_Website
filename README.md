@@ -16,9 +16,9 @@ Technology :
 How to Run : 
 
 	Download MongoDB Community Server -> run mongod
- 	git clone https://github.com/anhtan2223/Eco_V1
+ 	git clone https://github.com/anhtan2223/E-Commerce_Website
   	Open Terminal 1 ->	 cd Backend/ && npm i && npm start
-  	Open Terminal 2 ->	 cd Frontend/ && npm i &&npm run dev
+  	Open Terminal 2 ->	 cd Frontend/ && npm i && npm run dev
    	
 Account For test :
 
