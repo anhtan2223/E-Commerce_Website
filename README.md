@@ -1,6 +1,4 @@
 # Ecommerce Website
-Frontend + Backend
-
 Author : Le Sy Anh Tan
 
 Implementation Period : 
@@ -22,6 +20,7 @@ How to Run :
    	
 Account For test :
 
+    		admin - 123
 		staff - 123
 		user  - 123
 	
