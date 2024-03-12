@@ -20,7 +20,7 @@ How to Run :
    	
 Account For test :
 
-    		admin - 123
+    	admin - 123
 		staff - 123
 		user  - 123
 	
